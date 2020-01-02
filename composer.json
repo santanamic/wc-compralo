@@ -1,0 +1,41 @@
+{
+    "name": "compralo/woocommerce-plugin",
+    "version": "1.0.1",
+    "type": "wordpress-plugin",
+    "description": "Take payments on your store using Cryptocurrencies.",
+    "keywords": [
+        "WooCommerce",
+        "Cryptocurrencies",
+        "Bitcoin ",
+        "Altcoin",
+        "Mindexcoin",
+        "Easticoin",
+        "Checkout",
+        "Payments",
+        "Gateway",
+        "Compralo"
+    ],
+    "homepage": "https://gihub.com/compralo/woocommerce-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "WILLIAN SANTANA",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.6"
+    },
+    "autoload": {
+        "classmap": [ "includes" ],
+		"files": [
+			"includes/functions/wc-compralo-admin.php",
+			"includes/functions/wc-compralo-gateway.php",
+			"includes/functions/wc-compralo-plugin.php"						
+		]
+    },
+    "scripts": {
+        "docs": "docsify serve docs"
+    }
+}
+
